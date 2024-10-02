@@ -31,27 +31,6 @@ const Header: React.FC = () => {
           <Link to="/cart">장바구니</Link>
         </div>
       </div>
-
-      {/* 네비게이션 메뉴 */}
-      <nav className="header__nav">
-        <ul>
-          <li>
-            <Link to="/category/men">남성</Link>
-          </li>
-          <li>
-            <Link to="/category/women">여성</Link>
-          </li>
-          <li>
-            <Link to="/category/accessories">액세서리</Link>
-          </li>
-          <li>
-            <Link to="/category/shoes">신발</Link>
-          </li>
-          <li>
-            <Link to="/sale">세일</Link>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
