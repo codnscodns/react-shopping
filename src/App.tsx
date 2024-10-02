@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 import Register from './components/Register';
 import Login from './components/Login';
+import Cart from "./components/Cart";
 import './App.css';
 // 기타 필요한 컴포넌트 임포트
 
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path='/' element={<MainContent />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>
