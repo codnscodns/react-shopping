@@ -30,7 +30,7 @@ export default function Register() {
   <div className='register-div'>
     <form onSubmit={handleSubmit}>
       <div className="form-group">
-        <label>아이디:</label>
+        <label>아이디</label>
         <input
           type='text'
           value={id}
@@ -38,7 +38,7 @@ export default function Register() {
         />
       </div>
       <div className="form-group">
-        <label>이름:</label>
+        <label>이름</label>
         <input
           type='text'
           value={name}
@@ -46,7 +46,7 @@ export default function Register() {
         />
       </div>
       <div className="form-group">
-        <label>이메일:</label>
+        <label>이메일</label>
         <input
           type='email'
           value={email}
@@ -54,14 +54,14 @@ export default function Register() {
         />
       </div>
       <div className="form-group">
-        <label>비밀번호:</label>
+        <label>비밀번호</label>
         <input
           type='password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type='submit'>등록</button>
+      <button className='register-btn'>가입하기</button>
     </form>
   </div>
 

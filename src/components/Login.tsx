@@ -31,7 +31,7 @@ export default function Login() {
   <div className='login-div'>
     <form onSubmit={handleSubmit}>
       <div className="form-group">
-        <label>아이디:</label>
+        <label>아이디</label>
         <input 
           type='text'
           value={id}
@@ -39,14 +39,14 @@ export default function Login() {
         />
       </div>
       <div className="form-group">
-        <label>비밀번호:</label>
+        <label>비밀번호</label>
         <input
           type='password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type='submit'>로그인</button>
+      <button className='login-btn'>로그인</button>
     </form>
     {message && <p>{message}</p>}
   </div>

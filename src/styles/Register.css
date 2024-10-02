@@ -18,7 +18,9 @@
   .register-div label {
     display: block;       /* 레이블을 블록 요소로 설정 */
     margin-bottom: 5px;   /* 레이블과 인풋 사이 간격 */
-  }
+    text-align: left;
+    padding-left: 30px;
+}
   
   .register-div input {
     width: 80%;          /* 인풋 필드 너비를 100%로 설정 */
@@ -27,7 +29,7 @@
     border-radius: 4px;   /* 모서리를 둥글게 */
   }
   
-  button {
+  .register-btn {
     padding: 10px 20px;   /* 버튼에 패딩 추가 */
     background-color: black; /* 버튼 배경색 */
     color: white;         /* 버튼 글자 색상 */
@@ -39,7 +41,7 @@
     font-weight: bold;
   }
   
-  button:hover {
+  .register-btn:hover {
     background-color: #434242; /* 마우스 호버 시 버튼 색상 변화 */
     color: white;
   }
