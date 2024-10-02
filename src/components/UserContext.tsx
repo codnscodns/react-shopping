@@ -10,11 +10,14 @@ interface User {
 interface UserContextType {
   users: User[];
   addUser: (user: User) => void;
+  isLoggedIn: boolean;
+  setIsLoggedIn: (isLoggedIn: boolean) => void;
 }
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export const UserProvider = ({ children }: { children: ReactNode }) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [users, setUsers] = useState<User[]>([
     {
       id: 'user1',
@@ -35,7 +38,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <UserContext.Provider value={{ users, addUser }}>
+    <UserContext.Provider value={{ users, addUser, isLoggedIn, setIsLoggedIn }}>
       {children}
     </UserContext.Provider>
   );
